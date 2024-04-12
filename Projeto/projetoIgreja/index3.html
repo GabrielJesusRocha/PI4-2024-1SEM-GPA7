@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- tag link pode importar bibhiotecas esternas pra dentro -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+</head>
+
+<body>
+
+    <section class="login">
+        <div class="informacoes-login">
+            <pre class="home-login"> <!-- tag pre um texto pré formatado um texto pode ser exibido dentro dela-->
+                <div class="caixa-de-login">
+                    <div class="formulario"> 
+                        <h4 class="texto-login texto-cadastro"><span>login</span> <span> cadastro</span></h4>
+                        <form role="formulario-login"> <!--O atributo role descreve a função de um elemento em programas que podem fazer uso dele, como leitores de tela ou lupas. Os leitores de tela lerão esse elemento como um "botão" ao invés de um "link".-->   <!--tag form de formulario -->
+                            <fieldset class="fieldset"> <!-- tag é usada para agrupar elementos dentro de um formulario-->
+                                <h3 class="titulo-login">login</h3>
+                                <div class="container-formulario  usuario">
+                                    <label   for="login-usuario"></label>  <!--representa uma legenda para um item em uma interface de usuário-->
+                                    <input class="controle-formulario login-de-usuario  entrada-de-texto" type="text" aria-label="Usuario" placeholder="Usuario"> <!--  aria-label define um valor de string que rotula um elemento interativo.--> <!--placeholder  inseri, dentro do input, um texto que será apagado quando começar a digitar dentro do campo, e mostra mesmo  vazio -->
+                                    <i class="icone-email"></i>
+                                </div>
+                                <div class="container-formulario  senha">
+                                    <label for="login-senha"></label>
+                                    <input class="controle-formulario  login-de-senha entrada-de-texto"  type="password" aria-label="Senha" placeholder="Senha">
+                                    <i class="icone-senha"></i>
+                                </div>
+                                <input type="submit" value="login" class="btn btn-entrar">  <!--  é usado para criar controles interativos para formulários baseados na web para receber dados do usuário-->  <!-- submit  cria-se um botão de envio de formulário.-->
+                                <a href="#" class="esqueci-senha" target="_blank">Esqueci minha senha</a>
+
+                                <p class="texto fazer-cadasstro ">não possui usuario na life end piece?
+                                   <button class="mostrar-cadastro"> cadastrar agora</button>
+                                </p>
+                            </fieldset>
+                            <fieldset class="fieldset mostrar">
+
+                              <h3 class="titulo-cadastro"> cadastro</h3>
+                              <div class="conteinaer-fomulario  nome">
+                                <div>
+                                 <label for="label-cadastro">nome</label>
+                                 <input class="controle-formulario entrada-nome texto-nome" type="text" aria-label="Nome" placeholder="Nome">
+                                </div>
+
+                                <div>
+                                 <label for="label-email">email</label>
+                                 <input class="controle-formulario entrada-email texto-email" type="email" aria-label="Email" placeholder="Email">
+                                </div>
+
+                                <div>
+                                 <label for="label-telefone">telefone</label>
+                                 <input class="controle-formulario entrada-telefone texto-telefone" type="tel" aria-label="Telelfone" placeholder="telefone">
+                                </div>
+                                
+                                <div>
+                                 <label for="label-senha">Senha</label>
+                                 <input class="container-formulario entrada-senha texto-senha"   type="password" aria-label="Senha" placeholder="Senha">
+                                </div>
+                              </div>
+                               <button> login</button>
+                              </div>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+            </pre>
+        </div>
+    </section>
+
+</body>
+
+</html>
